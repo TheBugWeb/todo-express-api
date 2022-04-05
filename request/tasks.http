@@ -1,0 +1,26 @@
+### Create task
+POST http://localhost:3030/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Megadeth",
+  "description": "I love band"
+}
+
+### List tasks
+GET http://localhost:3030/api/tasks
+
+### Get tasks
+GET http://localhost:3030/api/tasks/1
+
+### Update task
+PUT http://localhost:3030/api/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Mudvayne",
+  "description": "I love band"
+}
+
+### Delete tasks
+DELETE http://localhost:3030/api/tasks/3
