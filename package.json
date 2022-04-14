@@ -1,0 +1,39 @@
+{
+  "name": "todo-express-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simples REST API with Express.js and React.js using monorepo",
+  "main": "index.js",
+  "author": {
+    "name": "Ivan Zaldivar",
+    "url": "https://github.com/thebug404"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBugWeb/todo-express-api/issues"
+  },
+  "homepage": "https://github.com/TheBugWeb/todo-express-api#readme",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run start --workspace=client",
+    "build:client": "npm run build --workspace=client",
+    "test:client": "npm run test --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "start:server": "npm run start --workspace=server",
+    "build:server": "npm run build --workspace=server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBugWeb/todo-express-api.git"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/jest": "^27.4.1",
+    "typescript": "^4.6.3",
+    "ts-node": "^10.7.0"
+  }
+}
